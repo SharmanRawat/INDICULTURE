@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+    filter: brightness(0.7); 
+}
+
+
+a {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: black;
+}
+
+/* Ensure no white line appears over navbar */
+nav {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    padding: 10px 20px;
+    z-index: 99; /* Ensure it's on top */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none; /* Ensure no borders */
+    margin: 0; /* Remove default margins */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    transition: background-color 0.3s, color 0.3s;
+   
+}
+
+/* Navbar style when scrolled */
+nav.scrolled {
+    background-color: black;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.56); /* this is for shadow effect */
+} 
+
+nav.scrolled ul li a {
+    color: green;
+    
+}
+
+nav.scrolled .logo {
+    color: orange;
+}
+
+nav .logo {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
+nav .logo h1 {
+    margin-bottom: 50px;
+}
+
+nav ul {
+ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    margin-top: 20px;
+
+}
+
+nav ul li a {
+    font-family: "Poppins";
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    margin-top: 50px;
+}
+
+nav ul li a:hover {
+    color: green;
+    text-decoration:overline orange;
+}
+
+
+.content {
+    margin-top: 330px;
+    padding: 20px;
+    display: flex;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position:relative;/* Optional border radius for rounded corners */
+    font-style: "Poppins";
+}
+
+
+.content h1 {
+    font-size: 40px; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+    font-family: "Poppins";
+}
+
+.content p {
+    display: flex;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin: 0.5rem 0; /* Space between lines */
+    
+}
+
+button {
+    height: 40px;
+    width: 190px;
+    background-color: #800000;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius:2px;
+    border-top-left-radius: 2px;
+    border-style: none;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button a{
+    font-size: large;
+}
+
+button:hover{
+    background: white;
+    transition: 0.5s;
+}
+ 
+.section-science-sacred {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Light background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the content within the section */
+.section-content {
+    text-align: center;
+    max-width: 800px; /* Adjust max width as needed */
+    margin: 0 auto;
+    
+}
+
+.section-content h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #666; /* Text color */
+    line-height: 1.6;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.container {
+    background-color: grey;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    justify-content:space-around;
+    padding: 20px;
+}
+
+.hero {
+    margin: 0;
+    font-family: sans-serif;
+    background:url("/History/1950.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 2em;
+}
+
+body::before {
+    content: '';
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0.3em;
+    font-size: 3em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p {
+    color: #0d71fc;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.timeline {
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.checkpoint div {
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.checkpoint p {
+    line-height: 27px;
+    color: #ccc;
+}
+
+.checkpoint:nth-child(odd) {
+    border-left: 3px solid #888;
+    padding-left: 3em;;
+    transform: translateX(17em) ;
+}
+
+.checkpoint:nth-child(even) {
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before {
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+    content: '';
+    background: #fff;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+    right: -0.5em;
+}
+
+@media screen and (max-width: 1150px) {
+    .timeline{
+        width: 80vw;
+    }
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
